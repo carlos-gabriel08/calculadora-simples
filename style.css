@@ -1,0 +1,173 @@
+
+
+body {
+    background-color: rgb(216, 216, 216);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.calculadora {
+    background-color: rgb(246, 243, 243);
+    width: 250px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    padding-bottom: 15px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#displayInput {
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding-top: 15px;
+    background-color: rgb(234, 231, 231);
+    height: 70%;
+    font-size: 20px;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    height: 60px;
+    background-color: rgb(225, 223, 223);
+    margin: 2px;
+    border: none;
+    transition: 0.3s;
+    font-size: x-large;
+}
+
+.clean {
+    width: 95%;
+    display: flex;
+    margin-left: 5px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(115, 115, 115);
+}
+
+.operador {
+    background-color: rgb(207, 255, 255);
+}
+
+.operador:hover {
+    background-color: rgb(148, 213, 213);
+}
+
+.igual {
+    background-color: rgb(173, 255, 173);
+}
+
+.igual:hover {
+    background-color: rgb(144, 213, 144);
+}
+.dark-mode {
+    border-radius: 50px;
+    background-color: rgb(236, 233, 233);
+    border: solid 1px black;
+    position: absolute; 
+    top: 15px; 
+    left: 15px;
+   
+}
+button .dark-mode{
+    background-color: aqua;
+}
+/*Modo claro - ícone*/
+ .dark-mode .light-icon {
+    display: inline;
+}
+
+ .dark-mode .dark-icon {
+    display: none;
+}
+
+
+/*Modo escuro*/ 
+.dark body  {
+    background-color: #4F4F4F;
+}
+
+.dark main{
+    background-color: #4F4F4F
+}
+
+.dark .calculadora {
+    background-color: rgb(40, 40, 40);
+}
+
+.dark button {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.dark button:hover {
+    background-color: rgb(45, 45, 45);
+    transition: 0.3s;
+}
+
+.dark .clean {
+    background-color: rgb(178, 4, 4);
+}
+
+.dark .clean:hover{
+    background-color: rgb(122, 0, 0);
+    transition: 0.3s;
+}
+
+.dark .operador{
+    background-color: rgb(113, 155, 155);
+}
+
+.dark .operador:hover{
+    background-color: rgb(56, 75, 75);
+    transition: 0.3s;
+}
+
+.dark .igual{
+    background-color: rgb(39, 136, 39);
+}
+
+.dark .igual:hover{
+    background-color: rgb(23, 81, 23);
+    transition: 0.3s;
+}
+
+
+.dark .dark-mode .light-icon {
+    display: none;
+}
+
+.dark .dark-mode .dark-icon {
+    display: inline;
+}
